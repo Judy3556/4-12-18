@@ -16,13 +16,13 @@ namespace rand2
             {
                 numbers.Add(i);
             }
-
+            
             //随机挑选一个印出
              Random rand = new Random();
             for(int i = 0; i < 6; i ++)
             {
 
-            int r = rand.Next(1, 43);
+            int r = rand.Next(1, numbers.Count );
             Console.WriteLine(numbers[r]);
 
             //并从List中删除
